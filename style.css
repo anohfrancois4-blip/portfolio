@@ -1,0 +1,125 @@
+/* Style de toute la page */
+body {
+  background: #050b1f;      /* fond bleu très sombre */
+  color: #eef2ff;           /* texte clair */
+  font-family: system-ui, sans-serif;
+  margin: 0;                /* enlève les marges par défaut */
+  padding: 60px 8vw;        /* espace autour du contenu (haut/bas, côtés) */
+}
+
+/* Titre principal */
+h1 {
+  font-size: 2.5rem;        /* taille du texte */
+  margin-bottom: 10px;
+}
+
+/* Paragraphes */
+p {
+  color: #9aa7c7;           /* gris-bleu, moins fort que le titre */
+  font-size: 1.1rem;
+}
+
+/* Le nom en bleu (balise <span> dans le titre) */
+span {
+  color: #3b82f6;
+}
+
+/* Boutons (class="btn" dans le HTML) */
+.btn {
+  display: inline-block;    /* permet d'ajouter des marges et du padding */
+  background: #3b82f6;      /* fond bleu */
+  color: white;
+  text-decoration: none;    /* enlève le soulignement du lien */
+  padding: 10px 18px;       /* espace à l'intérieur du bouton */
+  border-radius: 10px;      /* coins arrondis */
+  margin-top: 20px;
+  margin-right: 10px;       /* espace entre les deux boutons */
+}
+
+/* Variante du bouton : fond transparent et contour */
+.btn-outline {
+  background: transparent;
+  border: 1px solid #1c2850;
+}
+
+/* Titre "Projets" */
+h2 {
+  margin-top: 60px;         /* espace au-dessus */
+}
+
+/* Conteneur des cartes */
+.cards {
+  display: flex;            /* place les cartes côte à côte */
+  gap: 16px;                /* espace entre les cartes */
+  flex-wrap: wrap;          /* passe à la ligne si pas assez de place */
+}
+
+/* Une carte */
+.card {
+  background: #0d1735;      /* fond un peu plus clair que la page */
+  border: 1px solid #1c2850;
+  border-radius: 14px;
+  padding: 20px;
+  width: 250px;
+}
+/* Style du bouton de thème */
+#theme-btn {
+  background: transparent;
+  color: inherit;             /* reprend la couleur du texte de la page */
+  border: 1px solid #1c2850;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;            /* main au survol */
+  margin-bottom: 30px;
+}
+
+/* Mode clair : actif quand le body a la classe "light" */
+body.light {
+  background: #f6f8fc;
+  color: #0b1530;
+}
+
+body.light p {
+  color: #5a6785;
+}
+
+body.light .card {
+  background: #ffffff;
+  border-color: #dde3ef;
+}
+
+body.light .btn-outline,
+body.light #theme-btn {
+  border-color: #dde3ef;
+  color: #0b1530;
+}
+/* Zone des compteurs */
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* Les gros chiffres */
+.compteur {
+  display: block;           /* chaque chiffre sur sa propre ligne */
+  font-size: 2rem;
+}
+
+/* Le texte sous les chiffres */
+.label {
+  color: #9aa7c7;
+  font-size: 0.8rem;
+  text-transform: uppercase; /* met le texte en majuscules */
+}
+/* Photo de profil (class="photo" dans le HTML) */
+.photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;         /* cercle parfait */
+  object-fit: cover;          /* recadre sans déformer */
+  border: 3px solid #3b82f6;  /* contour bleu */
+  display: block;             /* la photo prend sa propre ligne */
+  margin-bottom: 20px;
+}

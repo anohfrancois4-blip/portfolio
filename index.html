@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <!-- Relie le fichier CSS à la page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Bouton pour changer de thème (id utilisé par le JavaScript) -->
+    <button id="theme-btn">Mode clair / sombre</button>
+
+    <!-- Ta photo : src = nom du fichier, alt = description (utile si l'image ne charge pas) -->
+   <!-- Photo de profil : class="photo" relie l'image au CSS -->
+   <img class="photo" src="photo/photo.jpeg.jpg" alt="profil">
+
+    <!-- Titre principal : le <span> permet de colorer le nom en bleu -->
+    <h1>Bonjour, je suis <span>N’doli Anoh</span></h1>
+
+    <!-- Petite phrase de présentation -->
+    <p>Je conçois des sites web et applications mobiles Flutter et Firebase.</p>
+
+    <!-- Zone des compteurs -->
+    <div class="stats">
+        <div>
+            <strong class="compteur" data-cible="3">0</strong>
+            <span class="label">Applications</span>
+        </div>
+
+        <div>
+            <strong class="compteur" data-cible="17">0</strong>
+            <span class="label">Fonctionnalités</span>
+        </div>
+    </div>
+
+    <!-- Boutons -->
+    <a class="btn" href="#projets">Voir mes projets</a>
+    <a class="btn btn-outline" href="mailto:anohfrancois4@gmail.com">Me contacter</a>
+
+    <h2 id="projets">Projets</h2>
+
+    <!-- Conteneur des projets -->
+    <div class="cards">
+        <div class="card">
+            <h3>Abidjan Plug</h3>
+            <p>Application d’un studio d’enregistrement : réservation de sessions freestyle et studio.</p>
+            <a class="btn" href="https://abidjan-plug.web.app" target="_blank">Voir le projet</a>
+        </div>
+    </div>
+
+    <!-- Le JavaScript se met toujours ICI, à la fin du body -->
+    <script src="script.js"></script>
+</body>
+</html>
