@@ -123,3 +123,23 @@ body.light #theme-btn {
   display: block;             /* la photo prend sa propre ligne */
   margin-bottom: 20px;
 }
+/* Conteneur des compétences */
+.skills {
+  display: flex;
+  flex-wrap: wrap;           /* passe à la ligne si pas assez de place */
+  gap: 10px;
+}
+
+/* Une compétence */
+.skill {
+  background: #0d1735;
+  border: 1px solid #1c2850;
+  border-radius: 10px;
+  padding: 8px 14px;
+}
+
+/* Version mode clair */
+body.light .skill {
+  background: #ffffff;
+  border-color: #dde3ef;
+}
